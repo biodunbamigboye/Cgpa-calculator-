@@ -1,0 +1,98 @@
+
+
+
+<style type="text/css">
+				
+				img{
+
+width: 100px;
+
+				}
+			</style>
+<body style=" padding-top: 20%"  onload="onLoad()"  >
+
+<table align="center" class="table-responsive table-bordered"  width="">
+
+<tr>   
+
+<td>  </td>
+<td>  <img src="log/as/about.jpg" onclick="about()" /></td>
+<td>  </td>
+
+
+
+</tr>
+
+<tr>   
+
+<td><a href="cgpacalc.html" title="GPA"> <img src="log/as/gpa.jpg"/> </a></td>
+
+<td><a href="log/grading.html" title="SETTINGS"> <img src="log/as/settings.jpg" border="" /> </a>   </td>
+<td> <a href="log/index.html" title="CGPA">  <img src="log/as/cgpa.jpg"/> </a>  </td>
+
+
+
+</tr>
+
+
+<tr>   
+
+<td>  </td>
+<td>   <img src="log/as/help.jpg"/> </td>
+<td>  </td>
+
+
+
+</tr>
+
+
+</table >
+<br><br>
+<footer  style="align:right">
+
+	<br><br>
+<td> <img src="log/as/exit.jpg"  onclick="exit_app()" style="width: 50px" width="50px" align="right" />   </td>	
+
+</footer>
+
+</body>
+<script type="text/javascript" type="application/javascript" src="plugins/cordova.custom.plugins.exitapp/www/ExitApp.js"></script>
+<script type="text/javascript" type="application/javascript" src="cordova.js"></script>
+<script type="text/javascript" type="application/javascript" src="plugins/cordova_plugin.js"></script>
+<script type="text/javascript" type="application/javascript" src="cordova-js-src/plugin/android/app.js"></script>
+
+<script type="text/javascript" type="application/javascript" src="cordova-js-src/android/nativeapiprovider.js"></script>
+<script type="text/javascript" type="application/javascript" src="cordova-js-src/android/promptbasednativeapi.js"></script>
+<script type="text/javascript" type="application/javascript" src="cordova-js-src/exec.js"></script>
+<script type="text/javascript" type="application/javascript" src="cordova-js-src/platform.js"></script>
+
+<script type="text/javascript">
+	 function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to make calls Cordova methods
+    //
+    function onDeviceReady() {  
+
+}
+   
+
+
+	function exit_app() {
+		var a=prompt("PRESS OK TO CLOSE THIS APP");
+		if(a==""){
+		//alert('exit');
+   if (navigator.app) {
+        navigator.app.exitApp();
+    } else if (navigator.device) {
+        navigator.device.exitApp();
+    }
+    }
+}
+
+
+function about(){
+	alert('This app was Designed by MR WACCAFF TECH WORLD you can contact us 08062070963 or EMAIL:mrwaccafftech@gmail.com');
+}
+</script>

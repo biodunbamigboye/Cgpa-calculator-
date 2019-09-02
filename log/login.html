@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Calm breeze login screen</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    <style type="text/css">
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="wrapper" >
+	<div class="container">
+		<h1>Welcome</h1><br>
+
+<h1>ENTER PASSWORD</h1>		
+		<form class="form">
+			<input type="password" id="pass" maxlength="4" placeholder="Enter Pin" required autofocus>
+			
+			<button type="button" id="login-button" onClick="proces()" style="color: #3D286B">CONTINUE</button><br>
+<br>
+
+			<H4><button type="button"  onclick="alla()">FORGOT PASSWORD</button></H4>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function alla(){
+
+			var del= prompt('ALL DATA WILL BE DELETED,TYPE YES (UPPERCASE) TO CONTINUE');
+			if(del=="YES"){
+alert('ALL DATA HAS BEEN SUCCESSFULLY DELETED, PLEASE CREATE A NEW PASSWORD');
+			 window.location='../c_pass.html';}
+			 else{ alert('OPERATION NOT SUCCESSFULL, NOTE THAT YOU MUST TYPE YES IN CAPITAL LETTER');}
+		}
+	</script>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+        <script src="js/index.js"></script>
+<script language="javascript" type="text/javascript" src="../script/login.js">
+	 
+	  </script>
+    
+    
+    
+  </body>
+</html>

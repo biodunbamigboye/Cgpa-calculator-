@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body  onLoad="egrade()" style="background-image: url(../logo.png)">
+
+    <div class="wrapper">
+	<div class="container">
+		<h4></h4>
+		
+		<form class="form">
+
+<img src="../img/icon.png"><br>
+<font color="RED"><a onclick="help()" >DEFAULT : 5.00(ALL INSTITUTIONS) | NEED HELP? </a></font><BR>
+
+
+<select id="grade" style=" width: 80%; color:#4A998E; font-size: 20PX; height: 50PX;">
+	<option value="5">CHOOSE A GRADING SYSTEM </option>
+	<option value="5">5.00(ALL INSTITUTIONS)</option>
+	<option value="4all">4.00(ALL INSTITUTIONS)</option>
+	<option value="4kwasu">4.00(KWASU)</option>
+	
+</select><br>
+<br>
+
+<button type="button" style="color: #3D286B" onClick="getgrade()">CONTINUE</button><br><br>
+
+
+
+
+
+		<script>
+			window.localStorage['user']="exist";
+			function getgrade(){
+				
+			var grade= document.getElementById('grade').value;
+				if(grade==5){
+				window.localStorage['grade']=5.00;
+				window.localStorage['spreadsheet']="spreadsheet.html";
+				grade_name="5.00(ALL INSTITUTIONS)";}
+				
+				if(grade=="4kwasu"){
+				window.localStorage['grade']=4.00;
+				window.localStorage['spreadsheet']="spreadsheet.html";
+				grade_name="4.00(KWASU)";
+				}
+				if(grade=="4all"){
+				window.localStorage['grade']=4.00;
+				window.localStorage['spreadsheet']="spreadsheet4_all.html";
+				grade_name="4.00(ALL INSTITUTIONS)";
+				}
+
+				
+				//window.location='option.html';
+				//alert(window.localStorage['user']);
+				
+				window.location="../option.html";
+				
+			////////////////////////////////////////////////////////////////////////////		
+			}
+			function egrade(){
+			var graded=	window.localStorage['grade'];
+			var spreadsheet=window.localStorage['spreadsheet'];
+			if(graded==5.00 & spreadsheet=="spreadsheet.html"){graded="5.00 ALL INSTITUTIONS";}
+			if(graded==4.00 & spreadsheet=="spreadsheet.html"){graded="4.00 KWASU";}
+			if(graded==4.00 & spreadsheet=="spreadsheet4_all.html"){graded="4.00 ALL INSTITUTIONS";}
+
+				if(graded!=undefined){	document.getElementById("gg").value=graded;	}
+				else{document.getElementById("gg").value='CHOOSE A GRADING SYSTEM' ;}
+			}
+			
+			</script>	
+				
+			
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+        <script src="js/index.js"></script>
+<script language="javascript" type="text/javascript" src="../script/grading.js">
+	
+	
+	 </script>
+    
+    
+    
+  </body>
+</html>

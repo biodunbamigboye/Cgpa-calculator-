@@ -1,0 +1,186 @@
+<script type='text/javascript'>
+
+function course()
+{
+	if(window.localStorage['result1']=='NAN GRADE POINT'||window.localStorage['result1']==''){}
+	else{
+		
+
+document.getElementById("acc233c").value=window.localStorage['acc233c1'];
+document.getElementById("acc201c").value=window.localStorage['acc201c1'];
+document.getElementById("fin201c").value=window.localStorage['fin201c1'];	
+document.getElementById("acc205c").value=window.localStorage['acc205c1'];
+document.getElementById("ecn201c").value=window.localStorage['ecn201c1'];
+document.getElementById("ecn203c").value=window.localStorage['ecn203c1'];
+document.getElementById("gns211c").value=window.localStorage['gns211c1'];
+document.getElementById("gns111c").value=window.localStorage['gns111c1'];
+document.getElementById("pos111c").value=window.localStorage['pos111c1'];
+document.getElementById("engc").value=window.localStorage['engc1'];
+document.getElementById("mathsc").value=window.localStorage['mathsc1'];
+document.getElementById("econsc").value=window.localStorage['econsc1'];	
+document.getElementById("comc").value=window.localStorage['comc1'];
+document.getElementById("accc").value=window.localStorage['accc1'];
+document.getElementById("bus103c").value=window.localStorage['bus103c1'];
+///////////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById("acc233p").value=window.localStorage['acc233p1'];
+document.getElementById("acc201p").value=window.localStorage['acc201p1'];
+document.getElementById("fin201p").value=window.localStorage['fin201p1'];	
+document.getElementById("acc205p").value=window.localStorage['acc205p1'];
+document.getElementById("ecn201p").value=window.localStorage['ecn201p1'];
+document.getElementById("ecn203p").value=window.localStorage['ecn203p1'];
+document.getElementById("gns211p").value=window.localStorage['gns211p1'];
+document.getElementById("gns111p").value=window.localStorage['gns111p1'];
+document.getElementById("pos111p").value=window.localStorage['pos111p1'];
+document.getElementById("engp").value=window.localStorage['engp1'];
+document.getElementById("mathsp").value=window.localStorage['mathsp1'];
+document.getElementById("econsp").value=window.localStorage['econsp1'];	
+document.getElementById("comp").value=window.localStorage['comp1'];
+document.getElementById("accp").value=window.localStorage['accp1'];
+document.getElementById("bus103p").value=window.localStorage['bus103p1'];
+////////////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById("acc233").value=window.localStorage['acc2331'];
+document.getElementById("acc201").value=window.localStorage['acc2011'];
+document.getElementById("fin201").value=window.localStorage['fin2011'];	
+document.getElementById("acc205").value=window.localStorage['acc2051'];
+document.getElementById("ecn201").value=window.localStorage['ecn2011'];
+document.getElementById("ecn203").value=window.localStorage['ecn2031'];
+document.getElementById("gns211").value=window.localStorage['gns2111'];
+document.getElementById("gns111").value=window.localStorage['gns1111'];
+document.getElementById("pos111").value=window.localStorage['pos1111'];
+document.getElementById("eng").value=window.localStorage['eng1'];
+document.getElementById("maths").value=window.localStorage['maths1'];
+document.getElementById("econs").value=window.localStorage['econs1'];	
+document.getElementById("com").value=window.localStorage['com1'];
+document.getElementById("acc").value=window.localStorage['acc1'];
+document.getElementById("bus103").value=window.localStorage['bus1031'];
+
+document.getElementById("result").value=window.localStorage['result1'];
+document.getElementById("show").value=window.localStorage['result1'];
+/////////////////////////////////////////////////////////////////////////////////////////////
+		}
+}
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <link rel="stylesheet" type="text/css" media="all" href="css/calc.css">
+        <title>GPA CALCULATOR</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="E-Shopin App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<meta charset utf="8">
+        <!--font-awsome-css-->
+           <link rel="stylesheet" href="css/font-awesome.min.css"> 
+		<!--bootstrap-->
+			<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!--custom css-->
+			<link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <!--component-css-->
+			<script src="js/jquery-2.1.4.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			 <!--script-->
+			 <script src="js/modernizr.custom.js"></script>
+            <script src="js/bigSlide.js"></script>
+            <script>
+				$(document).ready(function() {
+				$('.menu-link').bigSlide();
+				});
+            </script>
+			<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<script src="js/simpleCart.min.js"> </script>
+            <!--script-->
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <script src="js/easyResponsiveTabs.js"></script>
+			
+		<!--script-->
+		
+           <script language="javascript"  type="application/javascript" src="script/l_1.js">
+
+</script>
+    </head>
+<body onLoad="course()">
+<form>
+<div class="body-back" >
+	<div class="masthead pdng-stn1">
+		<div id="menu" class="panel" role="navigation">
+			<div class="wrap-content">
+							
+                            				<div class="profile-menu text-center">
+					<a href="#menu" class="menu-link active"><img class="img-circle border-effect" src="close.jpg"></a>
+						<h3>CURRENT SEMESTER GPA :</h3>
+						<p><input type="text" id="show" style="width:100%; background:black; color:white; border:black;" readonly></p>
+						<div class="pro-menu">
+								<ul class="nav navbar-right">
+									<li><a><input type="button" value=" GPA DATA CURRENT SEMESTER" id="" style="color:white; background:skyblue; height:30px; width:100%" onClick="course()" ></a></li>
+									
+									<li><a >  <input type="reset" value="DELETE GPA DATA " id="res" style="color:white; background:skyblue; height:30px; width:100%" onFocus="clr()" ></a></li>
+									<li><a  href="log/grading.html">  <input type="button" value="GRADING SYSTEM " id="res" style="color:white; background:skyblue; height:30px; width:100%"  ></a></li>
+									<li class="dropdown">
+								<a ><input type="button" onClick="about()" style="color:white; background:skyblue; height:30px; width:100%" value="ABOUT"></a>
+								<ul class="dropdown-menu" role="menu">
+									
+								</ul>
+				</li>
+<!------<li><a >  <input type="reset" value="EXIT " id="resh" style="color:white; background:skyblue; height:30px; width:100%" onFocus="exited()" ></a></li>------>
+								</ul>
+								
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="phone-box wrap push" id="home">
+			<div class="menu-notify">
+				<div class="profile-left">
+					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+				</div>
+				<div class="Profile-mid" onMouseOver="course()">
+					<h5 class="pro-link">SPREADSHEET <br>
+</h5>
+				</div>
+					<div class="clearfixfix"></div>
+				</div>
+		<!--products-main-->
+        
+                <div>
+        <center>
+
+<font color="red" style="text-align:left">Note : Course code is not compulsory</font>
+<form>
+<div id="ss">
+
+<script type="text/javascript">
+ 
+      $("#ss").load(window.localStorage['spreadsheet']); 
+
+ 
+  </script>
+
+</div>
+
+</form>
+
+
+</center>
+<br>
+
+        </div>
+
+				</div> 
+</div>
+</div>
+</div>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
